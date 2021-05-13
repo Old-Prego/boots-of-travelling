@@ -1,13 +1,13 @@
 # Main Plan
 
 ## Users
-
 - Have login and password
 - Keep track of:
   - Progress through story
   - Character ID
-  - Character name
-  - Character stats
+  - Username
+  - Password
+
 
 
 ## Story
