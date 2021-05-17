@@ -30,7 +30,11 @@ Item.innit(
       type: DataTypes.INTEGER,
       allowNull: false
     },
-    DexterityBoost:{
+    dexterityBoost:{
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    intelligenceBoost:{
       type: DataTypes.INTEGER,
       allowNull: false
     }
