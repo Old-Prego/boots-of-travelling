@@ -1,0 +1,55 @@
+/* Formatting and Positioning*/
+
+body {
+    background-image: url('');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#title {
+    background: none;
+    padding-top: 200px;
+}
+
+.callout {
+    border: none;
+}
+
+form {
+    margin: auto;
+    width: 425px;
+    padding-right: 75px;
+}
+
+
+/* Text styling and sizing */
+
+.credentials {
+    opacity: .2;
+    background-color: black;
+    color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+}
+
+input:focus-within {
+    background-color: white;
+    color: black;
+}
+
+#return {
+    color: black;
+}
+
+
+/* To Do Same with Login. The background will be the same
+Find fonts for title and enlarge
+make inputs look nicer
+mix color and background for different vibe? 
+(map? less real, more fantasy cartoon)
+maybe a non-static background
+effects for clicking on inputs? make it more responsive
+*/

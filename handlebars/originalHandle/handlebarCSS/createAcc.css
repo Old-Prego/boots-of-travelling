@@ -1,0 +1,55 @@
+/* Formatting and Positioning*/
+
+body {
+    background-image: url('');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#title {
+    background: none;
+    padding-top: 200px;
+}
+
+.callout {
+    border: none;
+}
+
+form {
+    margin: auto;
+    width: 425px;
+    padding-right: 75px;
+}
+
+#buttondiv {
+    margin-top: 15px
+}
+
+
+/* Text styling and sizing */
+
+.credentials {}
+
+input[type=text]:focus {}
+
+#return {
+    color: black;
+}
+
+
+/* To Do Same with Login. The background will be the same
+Find fonts for title and enlarge
+make inputs look nicer
+mix color and background for different vibe? 
+(map? less real, more fantasy cartoon)
+maybe a non-static background
+effects for clicking on inputs? make it more responsive
+*/
+
+
+/* Ideas 
+Map/Paper themed, (make inputs feel like writing somehow, submit button is a stamp.... Maybe create account is a sign-up letter for a guild)
+Map themed, checkpoints in the back are progress in titlescreen towards starting game (each input progresses background + pressing any button to continue) 
+*/

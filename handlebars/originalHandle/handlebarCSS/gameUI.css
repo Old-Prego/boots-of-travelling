@@ -1,0 +1,42 @@
+/* Formating and Structure */
+
+.row {
+    height: 100%;
+}
+
+#container {
+    border-style: solid;
+    border-width: 3px;
+    height: 100%;
+    width: 100%;
+}
+
+#side {
+    background-color: green;
+    opacity: .2;
+    border-style: solid;
+    border-width: 3px;
+    height: 100%;
+}
+
+#game {
+    border-style: solid;
+    border-width: 3px;
+    height: 100%;
+}
+
+#scene {
+    background-color: blue;
+    opacity: .2;
+    border-style: solid;
+    border-width: 3px;
+    height: 60%;
+}
+
+#userinterface {
+    background-color: yellow;
+    opacity: .2;
+    border-style: solid;
+    border-width: 3px;
+    height: 40%;
+}
