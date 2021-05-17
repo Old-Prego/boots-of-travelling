@@ -6,7 +6,7 @@ class Item extends Model{
 
 }
 
-Item.innit(
+Item.init(
   {
     id: {
       type: DataTypes.INTEGER,
