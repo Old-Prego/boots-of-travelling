@@ -8,6 +8,9 @@
   - Username
   - Password
 
+  - Character name
+  - Character stats
+  - Character Items
 
 
 ## Story
@@ -35,3 +38,34 @@
 - Can call data about items or enemies
 - Can call data about story branches
 
+
+## Team Roles/Responsibilities
+
+### Darren
+- HTML, CSS, javascript
+  - Frontend development
+
+### Zack
+- Express
+- Node Package stuff
+- Server setup
+- Javascript
+
+### Luke
+- Routing
+- Models
+- Javascript
+
+### Aben
+- Javascript
+- Logic stuff for characters/decisions/stats
+- Node
+- Routing/Models
+
+
+
+# How it works
+- Sign in
+- Select Character
+- Start story
+- Option to save 
