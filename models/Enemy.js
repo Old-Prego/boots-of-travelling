@@ -1,5 +1,4 @@
 const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
 const sequelize = require('../config/config');
 
 class Enemy extends Model {
@@ -45,7 +44,7 @@ Enemy.init(
         timestamps: false,
         underscored: true,
         modelName: 'Enemy'
-      }
+    }
 );
 
 module.exports = Enemy;

@@ -1,11 +1,16 @@
 const { Model, DataTypes } = require('sequelize');
+
 //const sequelize = require('../config/connection');
 
 class player_character extends Model {}
 
 player_character.init(
   {
+
     id: {
+
+      player_character_id: {
+
     type: DataTypes.INTEGER,
     AllowNull: false,
     primaryKey: true,
@@ -32,17 +37,19 @@ player_character.init(
       AllowNull: false,
     },
     Dexterity: {
+
       type: DataTypes.INTEGER,
       AllowNull: false,
     },
     
 
-    /*
-    - Strength
-    - Intelligence
-    - Dexterity
-    - XP*/
+      type: DataTypes.BOOLEAN,
+      AllowNull: false,
+    },
+    
+
   },
+
   {
     sequelize,
     timestamps: false,

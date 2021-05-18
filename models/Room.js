@@ -1,5 +1,4 @@
 const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
 const sequelize = require('../config/config');
 
 class Room extends Model {
@@ -53,14 +52,20 @@ Room.init(
         result4: {
             type: DataTypes.STRING,
             ALlowNull: true
+
         }
     },
-     {
+     
+
+        {
+
         sequelize,
         timestamps: false,
         underscored: true,
         modelName: 'Room'
+
       }
+
 );
 
 module.exports = Room;
