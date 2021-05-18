@@ -38,7 +38,14 @@ Enemy.init(
             type: DataTypes.INTEGER,
             allowNull: false
         }
-    }
+    
+    },
+    {
+        sequelize,
+        timestamps: false,
+        underscored: true,
+        modelName: 'Enemy'
+      }
 );
 
 module.exports = Enemy;

@@ -54,7 +54,13 @@ Room.init(
             type: DataTypes.STRING,
             ALlowNull: true
         }
-    }
+    },
+     {
+        sequelize,
+        timestamps: false,
+        underscored: true,
+        modelName: 'Room'
+      }
 );
 
 module.exports = Room;
