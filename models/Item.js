@@ -41,5 +41,6 @@ Item.init(
     timestamps: false,
     underscored: true,
     modelName: 'Item'
+  }
 );
 module.exports = Item;
