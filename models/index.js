@@ -1,9 +1,10 @@
+
 const Enemy = require('./Enemy');
 const Item = require('./Item');
 const Room = require('./Room');
 const User = require('./User');
 const player_character = require('./player_character');
-//const { UPSERT } = require('sequelize/types/lib/query-types');
+
 
  //Player character relationship
 User.hasOne(player_character, {
