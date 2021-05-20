@@ -53,7 +53,17 @@ Room.init(
             type: DataTypes.STRING,
             ALlowNull: true
 
-        }
+        },
+        user_id:  {
+            type: DataTypes.INTEGER,
+            reference: {
+              model : "user",
+              key : "id",
+      
+            },
+      
+
+      }
     },
      
 

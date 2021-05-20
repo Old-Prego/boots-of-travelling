@@ -36,7 +36,17 @@ Enemy.init(
         dexterity: {
             type: DataTypes.INTEGER,
             allowNull: false
-        }
+        },
+        user_id:  {
+            type: DataTypes.INTEGER,
+            reference: {
+              model : "user",
+              key : "id",
+      
+            },
+      
+
+      }
     
     },
     {
