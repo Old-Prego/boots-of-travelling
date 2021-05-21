@@ -1,9 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/config');
 
-class Enemy extends Model {
-    
-}
+class Enemy extends Model {}
 
 Enemy.init(
     {
