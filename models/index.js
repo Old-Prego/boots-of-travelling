@@ -39,6 +39,18 @@ User.hasOne(player_character, {
   });
 
 
+Item.belongsTo(Room, {
+  foreignKey: 'room_id',
+});
+
+Room.hasMany(Enemy, {
+  foreignKey: 'room_id',
+  onDelete: 'CASCADE',
+});
+
+Enemy.belongsTo(Room, {
+  foreignKey: 'room_id',
+})
 
 
 

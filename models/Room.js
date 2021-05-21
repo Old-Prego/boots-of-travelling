@@ -76,9 +76,7 @@ Room.init(
         timestamps: false,
         underscored: true,
         modelName: 'Room'
-
-
-      }
+    }
 
 );
 
