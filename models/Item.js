@@ -1,4 +1,4 @@
-const { Model, Datatypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/config');
 
 class Item extends Model{
@@ -36,11 +36,32 @@ Item.init(
     intelligenceBoost:{
       type: DataTypes.INTEGER,
       allowNull: false
+
     },
+    user_id:  {
+      type: DataTypes.INTEGER,
+      reference: {
+        model : "user",
+        key : "id",
+
+      },
+
+
+}
+
+  },
+  {
+
+    
+
     sequelize,
     timestamps: false,
     underscored: true,
     modelName: 'Item'
+
   }
+
+  
 );
+
 module.exports = Item;
