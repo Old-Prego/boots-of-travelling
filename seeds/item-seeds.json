@@ -1,0 +1,19 @@
+
+[
+    {
+        "name": "Obsidian Orb",
+        "description": "This orb flows with unnatural energy, giving the wielder insight and wisdom.",
+        "defenseBoost": 0,
+        "strengthBoost": 0,
+        "dexterityBoost": 0,
+        "intelligenceBoost": 1
+    },
+    {
+        "name": "Frost Dagger",
+        "description": "The dagger is cold to the touch",
+        "defenseBoost": 0,
+        "strengthBoost": 0,
+        "dexterityBoost": 2,
+        "intelligenceBoost": 0
+    }
+]

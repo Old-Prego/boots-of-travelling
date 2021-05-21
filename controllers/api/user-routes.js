@@ -28,9 +28,49 @@ router.post('/', async (req, res) => {
     try {
         const userData = await User.create(req.body);
         res.status(200).json(userData);
+
+        req.session.save(() => {
+          req.session.userID = newUser.id;
+          req.session.username = newUser.username;
+          req.session.loggedIn = true;
+
+          res.json(newUser);
+        })
     } catch (err) {
         res.status(400).json(err);
     }
+});
+
+router.post('/login', async (req, res) => {
+  try {
+    const user = await User.findOne({
+      where: {
+        username: req.body.username,
+      },
+    });
+
+    if(!user) {
+      res.status(400).json({ message: 'Your username or password are incorrect.'});
+      return;
+    }
+
+    const goodPW = user.checkPassword(req.body.password);
+
+    if(!validPassword) {
+      res.status(400).json({ message: 'Your username or password are incorrect.'});
+      return;
+    }
+
+    req.session.save(() => {
+      req.session.userID = newUser.id;
+      req.session.username = newUser.username;
+      req.session.loggedIn = true;
+
+      res.json({ user, message: 'Login Successful!'});
+    });
+  } catch(err) {
+    res.status(400).json({ message: 'Your username or password are incorrect.' });
+  }
 });
 
 router.put('/:id', async (req, res) => {
