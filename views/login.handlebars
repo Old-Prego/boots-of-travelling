@@ -1,0 +1,25 @@
+{{!-- Paired with main layout --}}
+
+<div class='form'>
+    <form method='post' action='../controllers/api/' id='login' name='login'>
+        <div class='row'>
+            <div class='columns small-12 medium-12 large-12'>
+                <label class='label'> Username
+                    <input class='credentials' type="text" name="Username" required>
+                </label>
+            </div>
+
+            <div class='columns small-12 medium-12 large-12'>
+                <label class='label'> Password
+                    <input class='credentials' type="password" name="Password" required>
+                </label>
+            </div>
+
+            <div class='columns small-6 medium-6 large-4'><input class='button' type='submit' value='Login'></div>
+
+            <div class='columns small-5 medium-5 large-8'>
+                <a id='redir' href='./createAcc.html' class='text'>Create Account</a>
+            </div>
+        </div>
+    </form>
+</div>
