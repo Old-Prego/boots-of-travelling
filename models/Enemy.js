@@ -1,10 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
 const sequelize = require('../config/config');
 
-class Enemy extends Model {
-    
-}
+class Enemy extends Model {}
 
 Enemy.init(
     {
@@ -37,14 +34,25 @@ Enemy.init(
         dexterity: {
             type: DataTypes.INTEGER,
             allowNull: false
-        }
-    }, 
-     {
+        },
+        user_id:  {
+            type: DataTypes.INTEGER,
+            reference: {
+              model : "user",
+              key : "id",
+      
+            },
+      
+
+      }
+    
+    },
+    {
         sequelize,
         timestamps: false,
         underscored: true,
-        modelName: 'Enemey'
-      }
+        modelName: 'Enemy'
+    }
 );
 
 module.exports = Enemy;

@@ -1,4 +1,3 @@
-
 const sequelize = require('../config/config');
 const {player_character , Enemy, User, Room, Item} = require('../models');
 
@@ -26,4 +25,3 @@ const seedDatabase = async () => {
 };
 
 seedDatabase();
-
