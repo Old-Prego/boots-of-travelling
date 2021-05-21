@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 const { Model, DataTypes } = require('sequelize');
 
+=======
+const { Model, Datatypes } = require('sequelize');
+>>>>>>> 965b483143054f3d893abd7a346b30ccd895fe7a
 const sequelize = require('../config/config');
 
 class Item extends Model{
@@ -59,8 +63,12 @@ Item.init(
     timestamps: false,
     underscored: true,
     modelName: 'Item'
+<<<<<<< HEAD
 
   }
 
+=======
+  }
+>>>>>>> 965b483143054f3d893abd7a346b30ccd895fe7a
 );
 module.exports = Item;

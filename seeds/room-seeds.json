@@ -1,4 +1,4 @@
- [
+[
     {
         "name": "The Shop",
         "description": "This shop is a mess! There are smashed windows, wooden shelves thrown to the floor, and mundane supplies strewn about. To the left, a wooden counter runs the length of the room with a lockbox seated on top. Behind the counter is a closed wooden door. What do you do?",
@@ -9,8 +9,28 @@
         "result1": "The windows have been smashed in, but it looks like the glass shards have mostly ended up outside of the shop. Maybe somebody broke the window from the inside?",
         "result2": "The door seems to have been forced open, but it is closed. You enter the next room and see a small living quarters for the shopkeep",
         "result3": "With a quick search around the room, you do not find much of value other than a small obsidian orb which turns out to be an arcane focus for wielding magic! (Obsidian Orb added to Inventory, +1 to Intelligence)",
-        "result4": "The lock box is fully intact and still locked. It does not seem like anyone tried to break into it"
-        
-    
-     }
+        "result4": "The lock box is fully intact and still locked. It does not seem like anyone tried to break into it",
+        "nextRoom": "choice2",
+        "initFight": null,
+        "itemChoice": "choice3",
+        "enemyID": null,
+        "itemID": 1
+    },
+    {
+        "name": "Shopkeeper's Living Quarters",
+        "description": "These living quarters are a cozy studio apartment, with a plush but worn oval carpet covering the floor. There seems to be a box in the corner covered by a blanket, and it is making rustling noises. There also seems to be some scrapes on the rear stone wall.",
+        "choice1": "Check out the weird box",
+        "choice2": "Look under the carpet",
+        "choice3": "Examine the rear wall to see why there are so many scrapes",
+        "choice4": null,
+        "result1": "Under the blanket is a very beat up cage, with an angry looking leprechaun wrestler inside. He struggles to get out of the cage and starts punching you in the shin",
+        "result2": "You find a secret cache under the carpet that contains a icy blue looking dagger that is cold to the touch. (Frost Dagger added to Inventory, +2 to Dexterity)",
+        "result3": "The scrapes on the wall look like they are surrounding a small gap in the stone wall. You pry at it, opening it enough to see steps leading down into a hidden cellar",
+        "result4": null,
+        "nextRoom": "choice3",
+        "initFight": "choice1",
+        "itemChoice": "choice2",
+        "enemyID": 1,
+        "itemID": 2
+    }
 ]

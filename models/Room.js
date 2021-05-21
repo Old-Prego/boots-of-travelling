@@ -3,7 +3,7 @@ const sequelize = require('../config/config');
 
 class Room extends Model {
     
-}
+{
 
 Room.init(
     {
@@ -51,22 +51,49 @@ Room.init(
         },
         result4: {
             type: DataTypes.STRING,
+
             ALlowNull: true
+
+        },
+        nextRoom: {
+            type: DataTypes.STRING,
+            AllowNull: false
+        },
+        initFight: {
+            type: DataTypes.STRING,
+            AllowNull: true
+        },
+        itemChoice: {
+            type: DataTypes.STRING,
+            AllowNull: true
+        },
+        enemyID: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'Enemy',
+                key: 'id',
+            },
+            AllowNull: true
+        },
+        itemID: {
+            type: DataTypes.STRING,
+            references: {
+                model: 'Item',
+                key: 'id',
+            },
+            AllowNull: true
 
         },
         user_id:  {
             type: DataTypes.INTEGER,
             reference: {
               model : "user",
-              key : "id",
+              key : "id"
       
             },
-      
-
-      }
+        }
+    
     },
-     
-
         {
 
         sequelize,
@@ -74,8 +101,11 @@ Room.init(
         underscored: true,
         modelName: 'Room'
 
+
       }
 
 );
+
+}
 
 module.exports = Room;

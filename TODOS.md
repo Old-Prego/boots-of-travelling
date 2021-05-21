@@ -1,78 +1,41 @@
-# TODO List
+# TODOs 5/20/21
 
-## Config
-- Connection stuff with sequelize
+- Choice Logic (Priority 1)
+  - When a choice is clicked,
+    - Populate screen with matching result
+    - If choice clicked matches the room's fight choice,
+      - go to fight logic referencing the room's enemy
+    - If choice clicked matches the room's "nextRoom" choice,
+      - Pop up "next room" button or something
+      - If "next room" button is clicked, populate next room referencing id
+    - If choice clicked matches the room's "itemChoice",
+      - add room's item to player character's inventory
+    - After choice logic is finished, disable that choice so they can't click it again and return to other choices
 
-## Controllers
+- Fight Logic
+  - Give player choice between different stats to use
+    - Strength
+    - Dexterity
+    - Intelligence
+    - Defense
+  - Based on choice,
+    - Take player_character stat (of chosen stat to use) and add any item stats that apply
+    - If player stat + item stat > enemy stat
+      - Player victory
+      - Go back to choices
+    - Else
+      - Game Over screen
 
+- Character Select
+  - Display characters and stats
+  - When character is selected, 
+    - Update save data for user with the chosen character
+    - Populate first room on screen
 
-
-## Views / Screens
-- Login
-- Create Account
-- Character Selection
-- Adventure choice
-- Continue (For when they log in)
-- Introduction/Information
-- Game Over (Win / Lose)
-
-
-## Features
-- Inventory / Items
-
-
-## Models
-- Player Characters
-  - ID
-  - Name
-  - Attack (Description)
-  - Defense
-  - Strength
-  - Intelligence
-  - Dexterity
-  - XP
-- User
-  - ID
-  - Email
-  - Hashed Password
-  - Save Data ID
-- Save Data
-  - ID
-  - Player Character ID
-  - Defense
-  - Strength
-  - Intelligence
-  - Dexterity
-  - XP
-  - Current Room ID
-  - Items (IDs)
-- Enemies
-  - ID
-  - Name
-  - Attack (Description)
-  - Defense
-  - Strength
-  - Intelligence
-  - Dexterity
-- Items
-  - ID
-  - Name
-  - Description
-  - Defense Boost
-  - Strength Boost
-  - Intelligence Boost
-  - Dexterity Boost
-- Rooms
-  - ID
-  - Name
-  - Description
-  - Choices
-    - Option 1
-    - Option 2
-    - Option 3
-    - Option 4
-  - Outcomes
-    - 1
-    - 2
-    - 3
-    - 4
+- Save Logic
+  - Whenever a user/player progresses to the next room,
+    - Update save data with new room ID
+  - Whenever a user/player picks up an item,
+    - Update save data with new item ID
+  - Whenever a user/player starts a new run by choosing a character
+    - Update save data with player_character ID
