@@ -14,38 +14,30 @@ User.hasOne(player_character, {
   player_character.belongsTo(User, {
     foreignKey: 'user_id',
   });
-  //Room relationship
-  User.hasOne(Room, {
-    foreignKey: 'user_id',
+  
+  //Enemy relationship
+
+  Room.hasMany(Enemy, {
+    foreignKey: 'room_id',
     onDelete: 'CASCADE',
   });
 
-  Room.belongsTo(User, {
-    foreignKey: 'user_id',
-  });
+ Enemy.belongsTo(Room,{
+  foreignKey: 'room_id',
 
+ });
+  
 //Item relationship
-  User.hasMany(Item, {
-    foreignKey: 'user_id',
+  Room.hasMany(Item, {
+    foreignKey: 'room_id',
     onDelete: 'CASCADE',
   });
   
  
-  Item.belongsTo(User, {
-    foreignKey: 'user_id',
+  Item.belongsTo(Room, {
+    foreignKey: 'room_id',
   });
 
-//Enemy relationship
-   User.hasMany(Enemy, {
-    foreignKey: 'user_id',
-    onDelete: 'CASCADE',
-  });
-  
- 
-  Enemy.belongsTo(User, {
-    foreignKey: 'user_id',
-  });
-  
 
 
 

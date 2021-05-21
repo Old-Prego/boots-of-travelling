@@ -67,31 +67,7 @@ Room.init(
             type: DataTypes.STRING,
             AllowNull: true
         },
-        enemyID: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'enemy',
-                key: 'id',
-            },
-            AllowNull: true
-        },
-        itemID: {
-            type: DataTypes.STRING,
-            references: {
-                model: 'item',
-                key: 'id',
-            },
-            AllowNull: true
-
-        },
-        user_id:  {
-            type: DataTypes.INTEGER,
-            reference: {
-              model : "user",
-              key : "id"
       
-            },
-        }
     
     },
         {
