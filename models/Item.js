@@ -38,10 +38,10 @@ Item.init(
       allowNull: false
 
     },
-    user_id:  {
+    room_id:  {
       type: DataTypes.INTEGER,
       reference: {
-        model : "user",
+        model : "room",
         key : "id",
 
       },

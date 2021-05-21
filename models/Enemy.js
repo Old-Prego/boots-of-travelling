@@ -35,10 +35,10 @@ Enemy.init(
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        user_id:  {
+        room_id:  {
             type: DataTypes.INTEGER,
             reference: {
-              model : "user",
+              model : "room",
               key : "id",
       
             },
