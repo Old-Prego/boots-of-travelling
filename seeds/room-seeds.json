@@ -1,7 +1,7 @@
 [
     {
         "name": "The Shop",
-        "description": "This shop is a mess! There are smashed windows, wooden shelves thrown to the floor, and mundane supplies strewn about. To the left, a wooden counter runs the length of the room with a lockbox seated on top. Behind the counter is a closed wooden door. What do you do?",
+        "description": "This shop is a mess! There are smashed windows, wooden shelves thrown to the floor, and mundane supplies strewn about. To the left, a wooden counter runs the length of the room with a lockbox seated on top. Behind the counter is a closed wooden door.",
         "choice1": "Investigate the window",
         "choice2": "Investigate the door",
         "choice3": "Look for valuables",
@@ -18,7 +18,7 @@
     },
     {
         "name": "Shopkeeper's Living Quarters",
-        "description": "These living quarters are a cozy studio apartment, with a plush but worn oval carpet covering the floor. There seems to be a box in the corner covered by a blanket, and it is making rustling noises. There also seems to be some scrapes on the rear stone wall.",
+        "description": "These living quarters are a cozy studio apartment, with a plush but worn oval carpet covering the floor. There seems to be a box in the corner covered by a blanket, and it is making rustling noises. There are also some scrapes on the rear stone wall.",
         "choice1": "Check out the weird box",
         "choice2": "Look under the carpet",
         "choice3": "Examine the rear wall to see why there are so many scrapes",

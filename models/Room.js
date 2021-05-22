@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/config');
 
-class Room extends Model {
+class Room extends Model {}
     
-}
+
 
 Room.init(
     {
@@ -51,7 +51,9 @@ Room.init(
         },
         result4: {
             type: DataTypes.STRING,
-            AllowNull: true
+
+            ALlowNull: true
+
         },
         nextRoom: {
             type: DataTypes.STRING,
@@ -65,31 +67,19 @@ Room.init(
             type: DataTypes.STRING,
             AllowNull: true
         },
-        enemyID: {
-            type: DataTypes.INTEGER,
-            references: {
-                model: 'Enemy',
-                key: 'id',
-            },
-            AllowNull: true
-        },
-        itemID: {
-            type: DataTypes.STRING,
-            references: {
-                model: 'Item',
-                key: 'id',
-            },
-            AllowNull: true
-        },
+      
+    
+    },
+        {
+
         sequelize,
         timestamps: false,
         underscored: true,
         modelName: 'Room'
-<<<<<<< HEAD
     }
 
-=======
->>>>>>> main
 );
+
+
 
 module.exports = Room;
