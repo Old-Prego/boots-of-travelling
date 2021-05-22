@@ -1,7 +1,7 @@
 /* Formatting and Positioning*/
 
 body {
-    background-image: url('../../assets/aged-paper-texture.jpg');
+    background-image: url('../assets/aged-paper-texture.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -37,7 +37,7 @@ body {
 
 @font-face {
     font-family: 'Ringbearer';
-    src: url('../../assets/font/RingbearerMedium.woff2') format('woff2'), url('../../assets/font/RingbearerMedium.woff') format('woff'), url('../../assets/font/RingbearerMedium.ttf') format('truetype');
+    src: url('../assets/font/RingbearerMedium.woff2') format('woff2'), url('../assets/font/RingbearerMedium.woff') format('woff'), url('../assets/font/RingbearerMedium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -45,7 +45,7 @@ body {
 
 @font-face {
     font-family: 'Midnight';
-    src: url('../../assets/font/NIGHTMAREPILLS.woff2') format('woff2'), url('../../assets/font/NIGHTMAREPILLS.woff') format('woff'), url('../../assets/font/NIGHTMAREPILLS.ttf') format('truetype');
+    src: url('../assets/font/NIGHTMAREPILLS.woff2') format('woff2'), url('../assets/font/NIGHTMAREPILLS.woff') format('woff'), url('../assets/font/NIGHTMAREPILLS.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
