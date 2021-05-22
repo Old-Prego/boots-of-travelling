@@ -3,6 +3,7 @@ const express = require('express');
 const session = require('express-session');
 const handlebars = require('express-handlebars');
 const helpers = require('./utils/helpers');
+const controllers = require('./controllers');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -22,6 +23,7 @@ const sess = {
 };
 
 app.use(session(sess));
+app.use(controllers);
 
 // Enables the use of helpers
 const hbs = handlebars.create({ helpers });
