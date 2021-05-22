@@ -1,16 +1,16 @@
 const router = require('express').Router();
 const { Enemy, Item, player_character, Room, User} = require('../models');
 
-router.get('/', async (req, res) => {
+router.get('/title', async (req, res) => {
 
 
 
     res.render('titlescreen');
 });
 
-router.get('/login', (req, res) => {
+router.get('/', (req, res) => {
     if (req.session.loggedIn) {
-        res.redirect('/');
+        res.redirect('/title');
         return;
     }
 
