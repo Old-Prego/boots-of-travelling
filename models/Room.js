@@ -51,12 +51,45 @@ Room.init(
         },
         result4: {
             type: DataTypes.STRING,
-            ALlowNull: true
+            AllowNull: true
+        },
+        nextRoom: {
+            type: DataTypes.STRING,
+            AllowNull: false
+        },
+        initFight: {
+            type: DataTypes.STRING,
+            AllowNull: true
+        },
+        itemChoice: {
+            type: DataTypes.STRING,
+            AllowNull: true
+        },
+        enemyID: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'Enemy',
+                key: 'id',
+            },
+            AllowNull: true
+        },
+        itemID: {
+            type: DataTypes.STRING,
+            references: {
+                model: 'Item',
+                key: 'id',
+            },
+            AllowNull: true
         },
         sequelize,
         timestamps: false,
         underscored: true,
         modelName: 'Room'
+<<<<<<< HEAD
+    }
+
+=======
+>>>>>>> main
 );
 
 module.exports = Room;
