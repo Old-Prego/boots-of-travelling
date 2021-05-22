@@ -1,0 +1,98 @@
+/* Formatting and Positioning*/
+
+body {
+    background-image: url('../../assets/aged-paper-texture.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+}
+
+#result {
+    background: none;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+.callout {
+    border: none;
+}
+
+.form {
+    margin: auto;
+    width: 425px;
+    height: 75px;
+}
+
+#choices {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Text styling and sizing */
+
+@font-face {
+    font-family: 'Ringbearer';
+    src: url('../../assets/font/RingbearerMedium.woff2') format('woff2'), url('../../assets/font/RingbearerMedium.woff') format('woff'), url('../../assets/font/RingbearerMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Midnight';
+    src: url('../../assets/font/NIGHTMAREPILLS.woff2') format('woff2'), url('../../assets/font/NIGHTMAREPILLS.woff') format('woff'), url('../../assets/font/NIGHTMAREPILLS.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+h2 {
+    font-size: 100px;
+    font-family: Ringbearer;
+}
+
+.button {
+    font-family: Midnight;
+    font-size: 35px;
+    font-variant: normal;
+    font-weight: 900;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.button:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+    background: none;
+    color: black;
+}
+
+.button {
+    background: none;
+    color: black;
+    padding: 0;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+
+/* To Do
+Let each option fade in shortly after main result fades in. 
+Custom font for Game Over Message or Adventure end?
+Maybe for the adventure end, a short summary of what happens afterwards is given? (Probably better in game UI)
+
+*/
