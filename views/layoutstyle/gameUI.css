@@ -1,0 +1,82 @@
+/* Formating and Structure */
+
+.row {
+    height: 100%;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+#side {
+    background-color: green;
+    border-style: solid;
+    border-width: 3px;
+    height: 100%;
+}
+
+#main {
+    border-style: solid;
+    border-width: 3px;
+    height: 100%;
+}
+
+#scene {
+    background-color: blue;
+    opacity: .2;
+    border-style: solid;
+    border-width: 3px;
+    height: 60%;
+}
+
+#userinterface {
+    background-color: yellow;
+    opacity: .2;
+    border-style: solid;
+    border-width: 3px;
+    height: 40%;
+}
+
+#roominfodiv {
+    margin-bottom: 25px;
+}
+
+#roominfodiv p {
+    margin: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#cards {
+    height: 200px;
+    opacity: .5;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Styling and stuff */
+
+@font-face {
+    font-family: 'Ringbearer';
+    src: url('../../../assets/font/RingbearerMedium.woff2') format('woff2'), url('../../../assets/font/RingbearerMedium.woff') format('woff'), url('../../../assets/font/RingbearerMedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Midnight';
+    src: url('../../../assets/font/NIGHTMAREPILLS.woff2') format('woff2'), url('../../../assets/font/NIGHTMAREPILLS.woff') format('woff'), url('../../../assets/font/NIGHTMAREPILLS.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+#roominfodiv p {
+    font-family: Ringbearer;
+    font-size: 20px;
+    font-weight: 700;
+}
