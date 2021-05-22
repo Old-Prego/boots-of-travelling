@@ -1,0 +1,55 @@
+[
+ {
+    "Name": "convict",
+    "Attack": "This convict might be free, but he still has a sharp shank for his enemies.",
+    "Defense": "5",
+    "Strength": "7",
+    "Intelleigence": "5",
+    "Dexteity": "6"
+    
+ },
+
+ {
+    "Name": "Olympic Gold Medal Winner",
+    "Attack": "random attack from gold medal win?",
+    "Defense": "6",
+    "Strength": "7",
+    "Intelleigence": "3",
+    "Dexteity": "7"
+    
+
+ },
+ {
+    "Name": "Smart Orangutan",
+    "Attack": "This orangutan is smart enought to use a gun and will shoot his enemies.",
+    "Defense": "7",
+    "Strength": "7",
+    "Intelleigence": "8",
+    "Dexteity": "3"
+    
+
+ },
+ {
+    "Name": "Recent Divorcee",
+    "Attack": "He will talk nonstop about his divorce, and depress his enemies.",
+    "Defense": "6",
+    "Strength": "4",
+    "Intelleigence": "7",
+    "Dexteity": "5"
+    
+
+ },
+ {
+    "Name": "Fullstack Developer",
+    "Attack": "Graduated from bootcamp, armed with the knowledge of fullstack",
+    "Defense": "4",
+    "Strength": "5",
+    "Intelleigence": "9",
+    "Dexteity": "8"
+    
+
+ }
+]
+
+   
+

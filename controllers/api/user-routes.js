@@ -26,7 +26,13 @@ router.get(':/id', async (req, res) =>{
 
 router.post('/', async (req, res) => {
     try {
-        const userData = await User.create(req.body);
+        console.log(req.body);
+        console.log(req.query);
+        console.log(req.params);
+        const userData = await User.create({
+          username: req.body.username,
+          password: req.body.password,
+        });
         res.status(200).json(userData);
 
         req.session.save(() => {
