@@ -4,6 +4,7 @@ const session = require('express-session');
 const handlebars = require('express-handlebars');
 const helpers = require('./utils/helpers');
 const controllers = require('./controllers');
+const bodyParser = require('body-parser')
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -34,6 +35,7 @@ app.set('view engine', 'handlebars');
 
 // Defines what files are publicly accessible and allows the server to find and serve them.
 app.use(express.json());
+app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 

@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const bodyParser = require('body-parser').json();
 
 router.get('/', async (req, res) =>{
   try{
@@ -24,8 +25,9 @@ router.get(':/id', async (req, res) =>{
   }
 });
 
-router.post('/', async (req, res) => {
+router.post('/',bodyParser,async (req, res) => {
     try {
+        // console.log(req);
         console.log(req.body);
         console.log(req.query);
         console.log(req.params);
@@ -36,18 +38,18 @@ router.post('/', async (req, res) => {
         res.status(200).json(userData);
 
         req.session.save(() => {
-          req.session.userID = newUser.id;
-          req.session.username = newUser.username;
+          req.session.userID = userData.id;
+          req.session.username = userData.username;
           req.session.loggedIn = true;
 
-          res.json(newUser);
+          res.json(userData);
         })
     } catch (err) {
         res.status(400).json(err);
     }
 });
 
-router.post('/login', async (req, res) => {
+router.post('/login', bodyParser, async (req, res) => {
   try {
     const user = await User.findOne({
       where: {
