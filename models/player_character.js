@@ -14,27 +14,31 @@ player_character.init(
     primaryKey: true,
     autoIncrement: true
     },
-    Name:{
+    name:{
       type: DataTypes.STRING,
       AllowNull: false,
     },
-    Attack: {
+    image: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    attack: {
       type: DataTypes.STRING,
       AllowNull: false,
     },
-    Defense: {
+    defense: {
       type: DataTypes.INTEGER,
       AllowNull: false,
     },
-    Strength: {
+    strength: {
       type: DataTypes.INTEGER,
       AllowNull: false,
     },
-    Intelligence: {
+    intelligence: {
       type: DataTypes.INTEGER,
       AllowNull: false,
     },
-    Dexterity: {
+    dexterity: {
 
       type: DataTypes.INTEGER,
       AllowNull: false,
