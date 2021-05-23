@@ -51,14 +51,11 @@
 }
 
 #cards {
-    height: 300px;
+    height: 350px;
     margin-top: 0;
     background-image: url('../assets/card-background.png');
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-size: 100% 110%;
+    padding: 60px 20px 100px 30px;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -140,6 +137,41 @@ img {
 }
 
 
+/* Character Select Formatting */
+
+.selectname {
+    margin: 0;
+    padding: 2px;
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 10px;
+    height: 100px;
+    font-family: Ringbearer;
+    font-size: 22px;
+}
+
+#charactercards {
+    height: 350px;
+    border-color: black;
+    border-style: solid;
+    border-width: 4px;
+    margin: 20px;
+    margin-top: 75px;
+    padding: 10px;
+}
+
+#character-image {
+    height: 179px;
+    width: 179px;
+}
+
+
+/* on hover effect */
+
+
+/* on focus effect */
+
+
 /* Styling and stuff */
 
 @font-face {
@@ -158,19 +190,19 @@ img {
     font-display: swap;
 }
 
-#roominfodiv p,
+#roominfodiv p {
+    font-family: Ringbearer;
+    font-size: 20px;
+}
+
 .name {
     font-family: Ringbearer;
     font-size: 20px;
 }
 
-.statag {
-    font-size: 20px;
-    font-weight: 400;
-}
-
 .stats {
     font-family: Ringbearermedium;
+    font-size: 18px;
 }
 
 .button,
