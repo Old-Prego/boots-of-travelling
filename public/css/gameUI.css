@@ -1,5 +1,8 @@
 /* Formating and Structure */
 
+
+/* Big containers */
+
 .row {
     height: 100%;
 }
@@ -10,7 +13,6 @@
 }
 
 #side {
-    background-color: green;
     border-style: solid;
     border-width: 3px;
     height: 100%;
@@ -23,20 +25,19 @@
 }
 
 #scene {
-    background-color: blue;
-    opacity: .2;
     border-style: solid;
     border-width: 3px;
     height: 60%;
 }
 
 #userinterface {
-    background-color: yellow;
-    opacity: .2;
     border-style: solid;
     border-width: 3px;
     height: 40%;
 }
+
+
+/* Inside sidebar */
 
 #roominfodiv {
     margin-bottom: 25px;
@@ -46,22 +47,136 @@
     margin: 0px;
     padding-top: 15px;
     padding-bottom: 15px;
+    font-weight: 700;
 }
 
 #cards {
-    height: 200px;
-    opacity: .5;
-    background-color: black;
+    height: 350px;
+    margin-top: 0;
+    background-image: url('../assets/card-background.png');
+    padding: 60px 20px 100px 30px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#charport {
+    height: 50%;
+    border-radius: 45%;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+img {
+    width: auto;
+    height: auto;
+}
+
+#statspacer {
+    height: min-content
+}
+
+.stats {
+    margin: 0;
+    padding: 3px;
+    font-size: 20px;
+}
+
+.name {
+    margin: 0;
+    padding: 2px;
+    padding-top: 15px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+#menudiv {
     margin: 0;
     padding: 0;
+    height: auto;
+    width: 246px;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 5px;
 }
+
+.button,
+.options {
+    margin: 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+
+/* Scene images */
+
+#positionspacer {
+    height: 300px;
+}
+
+#character,
+#enemy {
+    height: 250px;
+    width: 250px;
+    margin-top: 200px;
+}
+
+
+/* Description */
+
+#desc {
+    height: 80%;
+}
+
+#desc p {
+    margin: 25px;
+    margin-bottom: 0;
+}
+
+#options {
+    height: 20%;
+}
+
+
+/* Character Select Formatting */
+
+.selectname {
+    margin: 0;
+    padding: 2px;
+    padding-top: 10px;
+    text-align: center;
+    margin-top: 10px;
+    height: 100px;
+    font-family: Ringbearer;
+    font-size: 22px;
+}
+
+#charactercards {
+    height: 350px;
+    border-color: black;
+    border-style: solid;
+    border-width: 4px;
+    margin: 20px;
+    margin-top: 75px;
+    padding: 10px;
+}
+
+#character-image {
+    height: 179px;
+    width: 179px;
+}
+
+
+/* on hover effect */
+
+
+/* on focus effect */
 
 
 /* Styling and stuff */
 
 @font-face {
     font-family: 'Ringbearer';
-    src: url('../../../assets/font/RingbearerMedium.woff2') format('woff2'), url('../../../assets/font/RingbearerMedium.woff') format('woff'), url('../../../assets/font/RingbearerMedium.ttf') format('truetype');
+    src: url('../assets/font/RingbearerMedium.woff2') format('woff2'), url('../assets/font/RingbearerMedium.woff') format('woff'), url('../assets/font/RingbearerMedium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -69,7 +184,7 @@
 
 @font-face {
     font-family: 'Midnight';
-    src: url('../../../assets/font/NIGHTMAREPILLS.woff2') format('woff2'), url('../../../assets/font/NIGHTMAREPILLS.woff') format('woff'), url('../../../assets/font/NIGHTMAREPILLS.ttf') format('truetype');
+    src: url('../assets/font/NIGHTMAREPILLS.woff2') format('woff2'), url('../assets/font/NIGHTMAREPILLS.woff') format('woff'), url('../assets/font/NIGHTMAREPILLS.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -78,5 +193,50 @@
 #roominfodiv p {
     font-family: Ringbearer;
     font-size: 20px;
+}
+
+.name {
+    font-family: Ringbearer;
+    font-size: 20px;
+}
+
+.stats {
+    font-family: Ringbearermedium;
+    font-size: 18px;
+}
+
+.button,
+.options {
+    font-family: ringbearermedium;
+    font-size: 20px;
+    font-variant: normal;
+    font-weight: 700;
+    color: black;
+    font-weight: bolder;
+    background: linear-gradient(rgb(153, 119, 69), rgb(168, 123, 64), rgb(131, 91, 32));
+    border: 0.25em outset rgb(131, 91, 32);
+}
+
+.button:hover,
+.options:hover {
+    -webkit-mask-image: linear-gradient(-75deg, rgba(255, 255, 255, 0.6) 30%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+    background: linear-gradient(rgb(153, 119, 69), rgb(168, 123, 64), rgb(131, 91, 32));
+    color: black;
+}
+
+@-webkit-keyframes shine {
+    from {
+        -webkit-mask-position: 150%;
+    }
+    to {
+        -webkit-mask-position: -50%;
+    }
+}
+
+#desc p {
+    font-family: midnight;
+    font-size: 25px;
     font-weight: 700;
 }
