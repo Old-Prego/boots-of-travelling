@@ -41,7 +41,7 @@ body {
 #choices {
     height: 100%;
     width: 100%;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 
@@ -118,6 +118,7 @@ h2 {
 /* Making interact-able elements on page have special effects */
 
 .button:hover,
+.buttontitle:hover,
 .credentials:focus,
 .credentials:hover,
 #redir:hover {
