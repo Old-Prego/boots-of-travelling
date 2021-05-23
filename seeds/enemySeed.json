@@ -1,69 +1,76 @@
 [{
-    "Name": "Goblin Businessman",
-    "Attack": "He needs a loan and will heckle you for it.",
-    "Defense": "5",
-    "Strength": "7",
-    "Intelleigence": "5",
-    "Dexteity": "6"
+    "name": "Goblin Businessman",
+    "image": "./img/goblin-businessman.png",
+    "attack": "He needs a loan and will heckle you for it.",
+    "defense": "5",
+    "strength": "8",
+    "intelleigence": "8",
+    "dexteity": "6"
     
  },
  {
-    "Name": "Three Kids in a trench coat",
-    "Attack": "shout really specific insults at you based on the character",
-    "Defense": "6",
-    "Strength": "7",
-    "Intelleigence": "3",
-    "Dexteity": "7"
-    
-
- },
- {
-    "Name": "Warehorse",
-    "Attack": "You will get a butterfly kick from this warehorse",
-    "Defense": "7",
-    "Strength": "7",
-    "Intelleigence": "8",
-    "Dexteity": "3"
+    "name": "Three Kids in a trench coat",
+    "image": "./img/addlater",
+    "attack": "shout really specific insults at you based on the character",
+    "defense": "8",
+    "strength": "3",
+    "intelleigence": "6",
+    "dexteity": "3"
     
 
  },
  {
-    "Name": "Darth Skater",
-    "Attack": "This Enemy attacks you with his skateboard like a sword.",
-    "Defense": "6",
-    "Strength": "4",
-    "Intelleigence": "7",
-    "Dexteity": "5"
+    "name": "Warehorse",
+    "image": "./img/addlater",
+    "attack": "You will get a butterfly kick from this warehorse",
+    "defense": "7",
+    "strength": "9",
+    "intelleigence": "4",
+    "dexteity": "3"
     
 
  },
  {
-    "Name": "Stapler",
-    "Attack": "Graduated from bootcamp, armed with the knowledge of fullstack",
-    "Defense": "4",
-    "Strength": "5",
-    "Intelleigence": "9",
-    "Dexteity": "8"
+    "name": "Darth Skater",
+    "image": "./img/darth-sk8r.png",
+    "attack": "This Enemy attacks you with his skateboard like a sword.",
+    "defense": "10",
+    "strength": "6",
+    "intelleigence": "7",
+    "dexteity": "5"
     
 
  },
  {
-    "Name": "Potted Plant",
-    "Attack": "Graduated from bootcamp, armed with the knowledge of fullstack",
-    "Defense": "4",
-    "Strength": "5",
-    "Intelleigence": "9",
-    "Dexteity": "8"
+    "name": "Stapler",
+    "image": "./img/stapler.png",
+    "attack": "It will toss staples at you",
+    "defense": "4",
+    "strength": "5",
+    "intelleigence": "0",
+    "dexteity": "0"
     
 
  },
  {
-    "Name": "Leprechaun Wrestler",
-    "Attack": "This Leprechaun will hit you with a stone cold stunner and the people elbow.",
-    "Defense": "4",
-    "Strength": "5",
-    "Intelleigence": "9",
-    "Dexteity": "8"
+    "name": "Potted Plant",
+    "image": "./img/potted_plant.png",
+    "attack": "it will but you to sleep,by releasing pollen",
+    "defense": "4",
+    "strength": "5",
+    "intelleigence": "9",
+    "dexteity": "0"
+    
+
+ },
+ {
+    "name": "Leprechaun Wrestler",
+    "image": "./img/leprachaun-wrestler.png",
+    "attack": "This Leprechaun will hit you with a stone cold stunner and the people's elbow.",
+    "defense": "4",
+    "strength": "9",
+    "intelleigence": "5",
+    "dexteity": "7"
     
 
  }
