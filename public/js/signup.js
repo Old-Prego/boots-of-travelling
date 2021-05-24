@@ -20,7 +20,7 @@ const signupHandler = async function(event) {
     });
 
     if (response.ok) {
-        document.location.replace('/');
+        document.location.replace('/title');
     } else {
         window.alert("Failed to sign up, please try again");
     }

@@ -25,12 +25,8 @@ router.get(':/id', async (req, res) =>{
   }
 });
 
-router.post('/',bodyParser,async (req, res) => {
+router.post('/',bodyParser ,async (req, res) => {
     try {
-        // console.log(req);
-        console.log(req.body);
-        console.log(req.query);
-        console.log(req.params);
         const userData = await User.create({
           username: req.body.username,
           password: req.body.password,
@@ -51,20 +47,23 @@ router.post('/',bodyParser,async (req, res) => {
 
 router.post('/login', bodyParser, async (req, res) => {
   try {
+    console.log(req.body.username);
     const user = await User.findOne({
       where: {
-        username: req.body.username,
+        username: req.body.username,      
       },
     });
 
     if(!user) {
-      res.status(400).json({ message: 'Your username or password are incorrect.'});
+      console.log('Bad User');
+      res.status(400).json({ message: 'There is no user with your username'});
       return;
     }
-
+    console.log(password);
+    console.log(this.password);
     const goodPW = user.checkPassword(req.body.password);
 
-    if(!validPassword) {
+    if(!goodPW) {
       res.status(400).json({ message: 'Your username or password are incorrect.'});
       return;
     }
@@ -77,6 +76,7 @@ router.post('/login', bodyParser, async (req, res) => {
       res.json({ user, message: 'Login Successful!'});
     });
   } catch(err) {
+    console.log(req.body.username);
     res.status(400).json({ message: 'Your username or password are incorrect.' });
   }
 });
