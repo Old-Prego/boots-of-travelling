@@ -25,8 +25,19 @@ router.get('/gameplay', (req, res) => {
     res.render('gameplay', { layout: 'gameUI' });
 })
 
-router.get('/character-select', (req, res) => {
-    res.render('charsel');
-})
+router.get('/character-select', async (req, res) => {
+
+    try {
+        const characterData = await player_character.findAll();
+
+        const characters = characterData.map((character) => character.get({ plain: true }));
+        res.render('charsel', {
+            layout: 'gameUI',
+            characters,
+        });
+    } catch (err) {
+        res.redirect('/login');
+    }
+});
 
 module.exports = router;
