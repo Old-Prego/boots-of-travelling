@@ -1,69 +1,100 @@
-<div id='charselscene' class='columns small-12 medium-12 large-12'>
-    <div id='positions' class='collapse expanded row'>
-        <button id='charactercards' class='columns small-2 medium-2 large-2'>
-            <div class='collapse expanded row'>
-                <div id='charname' class='columns small-12 medium-12 large-12'>
-                    <p class='selectname'>
-                        <!-- {{character.name}} -->
-                        Olympic Gold Medalist
+<div id='side' class='columns small-2 medium-2 large-2'>
+    <div class='collapse expanded row'>
+        <div id='sidebar' class='columns small-12 medium-12 large-12'>
+            <div class='row collapse'>
+                <div id='roominfodiv' class='columns small-12 medium-12 large-12'>
+                    <p class='text-center'>
+                        {{room.name}}
                     </p>
                 </div>
-                <div id='character-image' class='columns small-12 medium-12 large-12'>
-                    <img class='selectimg' src='../public/img/olympic-gold.png'>
+
+                <div id='cards' class='columns small-12 medium-12 large-12'>
+                    <div class='collapse expanded row text-left'>
+                        <div id='charname' class='columns small-12 medium-12 large-12'>
+                            <p class='name'>Sample Name</p>
+                        </div>
+                        <div id='charport' class='columns small-6 medium-6 large-6'>
+                            <!-- {{character.portrait}} -->
+                            <img class='img' src='/img/olympic-gold-portrait.png'>
+                        </div>
+                        <div id='statspacer' class='columns small-6 medium-6 large-6'>
+                            <p class='stats'><strong class='statag'>HP:</strong> 50/100</p>
+                        </div>
+                        <div id='statspacer' class='columns small-6 medium-6 large-6'>
+                            <p class='stats'><strong class='statag'>STR:</strong> 38</p>
+                        </div>
+                        <div id='statspacer' class='columns small-6 medium-6 large-6'>
+                            <p class='stats'><strong class='statag'>DEX:</strong> 40</p>
+                        </div>
+                        <div id='statspacer' class='columns small-6 medium-6 large-6'>
+                            <p class='stats'><strong class='statag'>INT:</strong> 50</p>
+                        </div>
+                        <div id='statspacer' class='columns small-6 medium-6 large-6'>
+                            <p class='stats'><strong class='statag'>DEF:</strong> 50</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='menudiv' class='column align-self-bottom'>
+                    <div class='collapse row expanded text-center'>
+                        <div class='columns small-6 medium-6 large-5'>
+                            <input class='button' type='button' value='Save'>
+                        </div>
+
+                        <div class='columns small-6 medium-6 large-7'>
+                            <input class='button' type='button' value='Save + Exit'>
+                        </div>
+
+                        <div class='columns small-6 medium-6 large-6'>
+                            <input class='button' type='button' value='Go Back'>
+                        </div>
+
+                        <div class='columns small-6 medium-6 large-6'>
+                            <input class='button' type='button' value='Next' disabled>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </button>
-        <button id='charactercards' class='columns small-2 medium-2 large-2'>
-            <div class='collapse expanded row'>
-                <div id='charname' class='columns small-12 medium-12 large-12'>
-                    <p class='selectname'>
-                        <!-- {{character.name}} -->
-                        Fullstack Developer
-                    </p>
-                </div>
-                <div id='character-image' class='columns small-12 medium-12 large-12'>
-                    <img class='selectimg' src='../public/img/fullstack-developer.png'>
-                </div>
-            </div>
-        </button>
-        <button id='charactercards' class='columns small-2 medium-2 large-2'>
-            <div class='collapse expanded row'>
-                <div id='charname' class='columns small-12 medium-12 large-12'>
-                    <p class='selectname'>
-                        <!-- {{character.name}} -->
-                        Escaped Convict
-                    </p>
-                </div>
-                <div id='character-image' class='columns small-12 medium-12 large-12'>
-                    <img class='selectimg' src='../public/img/convict.png'>
-                </div>
-            </div>
-        </button>
-        <button id='charactercards' class='columns small-2 medium-2 large-2'>
-            <div class='collapse expanded row'>
-                <div id='charname' class='columns small-12 medium-12 large-12'>
-                    <p class='selectname'>
-                        <!-- {{character.name}} -->
-                        Recent Devorcee
-                    </p>
-                </div>
-                <div id='character-image' class='columns small-12 medium-12 large-12'>
-                    <img class='selectimg' src='../public/img/recent-divorcee.png'>
-                </div>
-            </div>
-        </button>
-        <button id='charactercards' class='columns small-2 medium-2 large-2 end'>
-            <div class='collapse expanded row'>
-                <div id='charname' class='columns small-12 medium-12 large-12'>
-                    <p class='selectname'>
-                        <!-- {{character.name}} -->
-                        Smart Orangutan
-                    </p>
-                </div>
-                <div id='character-image' class='columns small-12 medium-12 large-12'>
-                    <img class='selectimg' src='../public/img/orangutan.png'>
-                </div>
-            </div>
-        </button>
+        </div>
     </div>
 </div>
+
+<div id='main' class='columns small-10 medium-10 large-10'>
+    <div class='collapse expanded row'>
+        <div id='charselscene' class='columns small-12 medium-12 large-12'>
+            <div id='positions' class='collapse expanded row'>
+                {{#each characters}}
+                <button id='charactercards' class='columns end small-2 medium-2 large-2'>
+                    <div class='collapse expanded row'>
+                        <div id='charname' class='columns small-12 medium-12 large-12'>
+                            <p class='selectname'>
+                                {{name}}
+                            </p>
+                        </div>
+                        <div id='character-image' class='columns small-12 medium-12 large-12'>
+                            <img class='selectimg' src={{image}}>
+                        </div>
+                    </div>
+                </button>
+                {{/each}}
+            </div>
+        </div>
+
+        <div id='userinterface' class='columns small-12 medium-12 large-12'>
+            <div class='collapse expanded row'>
+                <div id='desc' class='columns small-12 medium-12 large-12'>
+                    <p class='desctext'>
+                        {{room.description}}
+                    </p>
+                </div>
+                <div id='options' class='columns small-12 medium-12 large-12'>
+                    <div class='columns text-center small-3 medium-3 large-3'>
+                        <input id="btn1" class='options' type='button' onclick="startGame()" value='{{room.choice1}}'>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/js/charSelect.js"></script>

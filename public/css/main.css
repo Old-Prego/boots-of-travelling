@@ -12,7 +12,7 @@ body {
 #title {
     background: none;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 }
 
 #result {
@@ -54,6 +54,63 @@ body {
     color: black;
     padding: 0;
     margin: 20px;
+}
+
+
+/* Formatting for saves */
+
+#spacers {
+    height: 10px;
+}
+
+#savesdiv {
+    padding: 10px;
+    padding-left: 30px;
+    margin: 0;
+    border-width: 5px;
+    border-style: solid;
+    height: 400px;
+}
+
+#saves {
+    padding: 5px;
+    border-width: 5px;
+    border-style: solid;
+    height: 125px;
+}
+
+
+/* Inside each save box */
+
+#charport {
+    height: 100%;
+    border-radius: 45%;
+    overflow: hidden;
+}
+
+.img {
+    width: auto;
+    height: auto;
+}
+
+#saveinfo {
+    border-width: 5px;
+    border-style: solid;
+    margin-left: 30px;
+}
+
+.gameprog {
+    margin: 0 !important;
+    /* Save Style */
+    font-family: ringbearermedium;
+    font-size: 20px;
+    width: fit-content;
+}
+
+#lesserdeets {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
 }
 
 

@@ -1,7 +1,7 @@
 [
  {
     "name": "convict",
-    "image": "./img/convict.png",
+    "image": "/img/convict.png",
     "attack": "This convict might be free, but he still has a sharp shank for his enemies.",
     "defense": "5",
     "strength": "7",
@@ -12,7 +12,7 @@
 
  {
     "name": "Olympic Gold Medal Winner",
-    "image": "./img/olympic-gold.png",
+    "image": "/img/olympic-gold.png",
     "attack": "This olympian will beat you with there metal",
     "defense": "6",
     "strength": "7",
@@ -23,7 +23,7 @@
  },
  {
     "name": "Smart Orangutan",
-    "image": "./img/addlater",
+    "image": "/img/orangutan.png",
     "attack": "This orangutan is smart enought to use a gun and will shoot his enemies.",
     "defense": "7",
     "strength": "7",
@@ -34,7 +34,7 @@
  },
  {
     "name": "Recent Divorcee",
-    "image": "./img/recent-divorcee.png",
+    "image": "/img/recent-divorcee.png",
     "attack": "He will talk nonstop about his divorce, and depress his enemies.",
     "defense": "6",
     "strength": "4",
@@ -45,7 +45,7 @@
  },
  {
     "name": "Fullstack Developer",
-    "image": "./img/fullstack-developer.png",
+    "image": "/img/fullstack-developer.png",
     "attack": "Graduated from bootcamp, armed with the knowledge of fullstack",
     "defense": "4",
     "strength": "5",
