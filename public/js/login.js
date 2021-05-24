@@ -16,7 +16,7 @@ const loginHandler = async function(event) {
     if(response.ok) {
         document.location.replace('/title');
     } else {
-        window.alert('Failed to login');
+        alert('Failed to login');
     }
 };
 
