@@ -1,5 +1,22 @@
 [
     {
+        "name": "Select your Character!",
+        "description": "Choose a character!",
+        "choice1": "Start Game",
+        "choice2": "",
+        "choice3": "",
+        "choice4": "",
+        "result1": "",
+        "result2": "",
+        "result3": "",
+        "result4": "",
+        "nextRoom": "choice1",
+        "initFight": null,
+        "itemChoice": null,
+        "enemyID": null,
+        "itemID": null
+    },
+    {
         "name": "The Shop",
         "description": "This shop is a mess! There are smashed windows, wooden shelves thrown to the floor, and mundane supplies strewn about. To the left, a wooden counter runs the length of the room with a lockbox seated on top. Behind the counter is a closed wooden door.",
         "choice1": "Investigate the window",
