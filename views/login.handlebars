@@ -1,17 +1,17 @@
 {{!-- Paired with main layout --}}
 
 <div class='form'>
-    <form method='post' action='../controllers/api/' id='login' name='login'>
+    <form method='post' action='/api/user/login' id='loginForm' name='login'>
         <div class='row'>
             <div class='columns small-12 medium-12 large-12'>
                 <label class='label'> Username
-                    <input class='credentials' type="text" name="Username" required>
+                    <input id="username" class='credentials' type="text" name="Username" required>
                 </label>
             </div>
 
             <div class='columns small-12 medium-12 large-12'>
                 <label class='label'> Password
-                    <input class='credentials' type="password" name="Password" required>
+                    <input id="password" class='credentials' type="password" name="Password" required>
                 </label>
             </div>
 
@@ -23,3 +23,5 @@
         </div>
     </form>
 </div>
+
+<script src="/js/login.js"></script>
