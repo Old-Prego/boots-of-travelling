@@ -3,13 +3,13 @@ const userChoice = document.querySelector('chosen_path')
 const roomID = document.querySelector('input')
 
 //basic skeleton to handle diffrent results based on user choice....
-function choiceResults(userChoice){
+function choiceResults(choice){
 
-    if ( userChoice === roomID.nextRoom){
+    if ( choice === roomID.nextRoom){
       goToNextroom()
-    }else if (userChoice === roomID.initFight) {
+    }else if (choice === roomID.initFight) {
       startFight()
-    }else if (userChoice === roomID.itemChoice) {
+    }else if (choice === roomID.itemChoice) {
       pickupItem()
     }else{
       displayResult()
@@ -20,7 +20,7 @@ function choiceResults(userChoice){
 //if the user chioce triggers an itemChoice
 function pickupItem(){
   displayResult(userChoice)
-  displayItemStats()
+  displayItemStats(roomID.itemID)
   disableitemPickup()
 }
 
@@ -32,11 +32,16 @@ function goToNextroom(){
 //if the user choice begins a fight
 function startFight(){
   displayResult(userChoice)
+  if (beginFight.playerWins){
+    //function to display choices...
+  }else{
+    //gameover...
+  }
 }
 
 //generates the messages for the user...
-function displayResult(userChoice){
-    switch (userChoice){
+function displayResult(choice){
+    switch (choice){
       case roomID.choice1:
         return roomID.result1;
       case roomID.choice2:
@@ -49,10 +54,12 @@ function displayResult(userChoice){
     }
 }
 
+//displays item stats for the user
 displayItemStats(){
 
 }
 
+//disbles item pickup choice so that user is unable to duplicate item in inventory...
 disableitemPickup(){
 
 }
