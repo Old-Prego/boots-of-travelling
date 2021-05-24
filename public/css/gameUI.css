@@ -16,7 +16,7 @@
     border-style: solid;
     border-width: 6px 3px 6px 6px;
     box-shadow: inset 5px 3px 50px black;
-    background-image: url('../../public/assets/images.jpg');
+    background-image: url('../assets/images.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -50,7 +50,7 @@
     border-style: solid;
     border-width: 3px;
     box-shadow: inset 5px 3px 50px black;
-    background-image: url('../../public/assets/chatbackground.png');
+    background-image: url('../assets/chatbackground.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -165,7 +165,7 @@ img {
     border-style: solid;
     border-width: 6px 6px 3px 3px;
     box-shadow: inset 5px 3px 25px black;
-    background-image: url('../../public/assets/coolmaybe.jpg');
+    background-image: url('../assets/coolmaybe.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -190,7 +190,7 @@ img {
     margin-top: 75px;
     padding: 10px;
     box-shadow: inset 5px 3px 25px black;
-    background-image: url('../../public/assets/cardbackground.jpg');
+    background-image: url('../assets/cardbackground.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
