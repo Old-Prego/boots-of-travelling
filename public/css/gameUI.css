@@ -14,7 +14,13 @@
 
 #side {
     border-style: solid;
-    border-width: 3px;
+    border-width: 6px 3px 6px 6px;
+    box-shadow: inset 5px 3px 50px black;
+    background-image: url('../../public/assets/images.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100%;
 }
 
@@ -22,17 +28,33 @@
     border-style: solid;
     border-width: 3px;
     height: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-width: 0px;
 }
 
 #scene {
     border-style: solid;
-    border-width: 3px;
+    border-width: 6px 6px 3px 3px;
+    box-shadow: inset 5px 3px 25px black;
+    /* scene images will be done through js */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 60%;
 }
 
 #userinterface {
     border-style: solid;
     border-width: 3px;
+    box-shadow: inset 5px 3px 50px black;
+    background-image: url('../../public/assets/chatbackground.png');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 40%;
 }
 
@@ -139,6 +161,18 @@ img {
 
 /* Character Select Formatting */
 
+#charselscene {
+    border-style: solid;
+    border-width: 6px 6px 3px 3px;
+    box-shadow: inset 5px 3px 25px black;
+    background-image: url('../../public/assets/coolmaybe.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 60%;
+}
+
 .selectname {
     margin: 0;
     padding: 2px;
@@ -152,12 +186,16 @@ img {
 
 #charactercards {
     height: 350px;
-    border-color: black;
-    border-style: solid;
-    border-width: 4px;
     margin: 20px;
     margin-top: 75px;
     padding: 10px;
+    box-shadow: inset 5px 3px 25px black;
+    background-image: url('../../public/assets/cardbackground.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+    opacity: .6;
 }
 
 #character-image {
@@ -165,11 +203,10 @@ img {
     width: 179px;
 }
 
-
-/* on hover effect */
-
-
-/* on focus effect */
+#charactercards:hover,
+#charactercards:focus {
+    opacity: 1;
+}
 
 
 /* Styling and stuff */
