@@ -21,8 +21,16 @@ router.get('/createAcc', (req, res) => {
     res.render('createAcc');
 })
 
-router.get('/gameplay', (req, res) => {
-    res.render('gameplay', { layout: 'gameUI' });
+router.get('/gameplay/:id', async (req, res) => {
+
+    const roomData = await Room.findByPk(req.params.id);
+
+    const room = roomData.get({ plain: true });
+
+    res.render('gameplay', { 
+        layout: 'gameUI',
+        room 
+    });
 })
 
 router.get('/character-select', async (req, res) => {
