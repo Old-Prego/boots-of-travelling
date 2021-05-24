@@ -1,7 +1,7 @@
 const router = require('express').Router();
-const { Enemy, Item, player_character, Room, User} = require('../models');
+const { Enemy, Item, player_character, Room, User } = require('../models');
 
-router.get('/title', async (req, res) => {
+router.get('/title', async(req, res) => {
 
 
 
@@ -19,6 +19,14 @@ router.get('/', (req, res) => {
 
 router.get('/createAcc', (req, res) => {
     res.render('createAcc');
+})
+
+router.get('/gameplay', (req, res) => {
+    res.render('gameplay', { layout: 'gameUI' });
+})
+
+router.get('/character-select', (req, res) => {
+    res.render('charsel');
 })
 
 module.exports = router;

@@ -7,7 +7,7 @@ const controllers = require('./controllers');
 const bodyParser = require('body-parser')
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3006;
 
 const sequelize = require('./config/config');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
@@ -42,5 +42,5 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`);
     console.log(`http://localhost:${PORT}`);
-    sequelize.sync({ force: false});
+    sequelize.sync({ force: false });
 });

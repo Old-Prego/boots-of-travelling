@@ -32,7 +32,7 @@ body {
 .form {
     margin: auto;
     width: 425px;
-    padding-right: 75px;
+    padding-left: 75px;
 }
 
 
@@ -84,8 +84,8 @@ h2 {
     font-size: 100px;
 }
 
-.label,
-.button {
+.button,
+.label {
     font-family: Midnight;
     font-size: 25px;
     font-variant: normal;
@@ -95,7 +95,8 @@ h2 {
     margin: 0;
 }
 
-.button {
+.button,
+.label {
     background: none;
     color: black;
     padding: 0;
