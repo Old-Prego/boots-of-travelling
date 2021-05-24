@@ -59,8 +59,6 @@ router.post('/login', bodyParser, async (req, res) => {
       res.status(400).json({ message: 'There is no user with your username'});
       return;
     }
-    console.log(password);
-    console.log(this.password);
     const goodPW = user.checkPassword(req.body.password);
 
     if(!goodPW) {
@@ -69,8 +67,8 @@ router.post('/login', bodyParser, async (req, res) => {
     }
 
     req.session.save(() => {
-      req.session.userID = newUser.id;
-      req.session.username = newUser.username;
+      req.session.userID = user.id;
+      req.session.username = user.username;
       req.session.loggedIn = true;
 
       res.json({ user, message: 'Login Successful!'});
