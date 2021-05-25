@@ -16,7 +16,7 @@
     border-style: solid;
     border-width: 6px 3px 6px 6px;
     box-shadow: inset 5px 3px 50px black;
-    background-image: url('../assets/images.jpg');
+    background-image: url('../../public/assets/images.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -50,7 +50,7 @@
     border-style: solid;
     border-width: 3px;
     box-shadow: inset 5px 3px 50px black;
-    background-image: url('../assets/chatbackground.png');
+    background-image: url('../../public/assets/chatbackground.png');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -165,7 +165,7 @@ img {
     border-style: solid;
     border-width: 6px 6px 3px 3px;
     box-shadow: inset 5px 3px 25px black;
-    background-image: url('../assets/coolmaybe.jpg');
+    background-image: url('../../public/assets/coolmaybe.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -190,7 +190,7 @@ img {
     margin-top: 75px;
     padding: 10px;
     box-shadow: inset 5px 3px 25px black;
-    background-image: url('../assets/cardbackground.jpg');
+    background-image: url('../../public/assets/cardbackground.jpg');
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -255,7 +255,8 @@ img {
 }
 
 .button:hover,
-.options:hover {
+.options:hover,
+.button:focus {
     -webkit-mask-image: linear-gradient(-75deg, rgba(255, 255, 255, 0.6) 30%, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0.6) 70%);
     -webkit-mask-size: 200%;
     animation: shine 2s infinite;
@@ -276,12 +277,4 @@ img {
     font-family: midnight;
     font-size: 25px;
     font-weight: 700;
-}
-
-
-/* Save Style */
-
-.gameprog {
-    font-family: ringbearermedium;
-    font-size: 20px;
 }
